@@ -878,8 +878,6 @@ footer ul li a:hover {
   font-weight: 600;
 }
 .toggle-menu {
-  bottom: 0;
-  position: fixed;
 }
 @media (max-width: 400px) {
   .sidebar.close .nav-links li .sub-menu {
@@ -972,6 +970,16 @@ footer ul li a:hover {
 #menu {
   display: none;
 }
+#menu-btn {
+  display: block;
+  position: absolute;
+  font-size: 32px;
+  margin-top: -15px;
+  margin-left: 100px;
+}
+#menu-btn:hover {
+  cursor: pointer;
+}
 @media (max-width: 600px) {
   .gallery {
     margin-right: 25px;
@@ -1022,11 +1030,12 @@ footer ul li a:hover {
     font-size: 32px;
     margin-left: 350px;
   }
+  .toggle-menu {
+    display: flex;
+    background-color: red;
+    width: 200px;
+  }
   #menu-btn {
-    display: block;
-    position: absolute;
-    margin-top: -775px;
-    margin-left: 400px;
-    font-size: 32px;
+    display: inline-block !important;
   }
 }
