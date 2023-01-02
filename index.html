@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABAKO Intra</title>
-
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 
@@ -135,10 +134,9 @@
         
          
          
-          <li>
+          <li class="toggle-btn">
             <div class="toggle-menu">
                 <i class="bx bx-menu"></i>
-
             </div>
           </li>
         </ul>
@@ -169,50 +167,51 @@
     <!--========================== END OF NAVBAR ============================-->
 <section class="faqs">
     <h1 class="banneri">BANNERI</h1>
-    <img src="">
-
+<i id="menu" class="bx bx-menu"></i>   
 </section>
    
     <div class="main-content">
-      <section class="gallery">
-        <div class="gallery-icons">
-          <div class="gallery-icon">
-            <i class='bx bxl-html5' ></i>
-            <a href="#">HTML</a>
+      <section class="d-flex">
+        <section class="gallery">
+          <div class="gallery-icons">
+            <div class="gallery-icon">
+              <i class='bx bxl-html5' ></i>
+              <a href="#">HTML</a>
+            </div>
+            <div class="gallery-icon">
+              <i class='bx bxl-css3' ></i>
+              <a href="#">CCS3</a>
+            </div>
+            <div class="gallery-icon">
+              <i class='bx bxl-javascript' ></i>
+              <a href="#">JS</a>
+            </div>
+            <div class="gallery-icon">
+              <i class='bx bxl-nodejs' ></i>
+              <a href="#">Nodejs</a>
+            </div>
+            <div class="gallery-icon">
+              <i class='bx bxl-react'></i>
+              <a href="#">React</a>
+            </div>
           </div>
-          <div class="gallery-icon">
-            <i class='bx bxl-css3' ></i>
-            <a href="#">CCS3</a>
+          <div class="gallery-imgs">
+            <div>
+              <p>Lomalista</p>
+            </div>
+            <div>
+              <p>HelpDisk vuorat</p>
+            </div>
+            <div>
+              <p>Dokumenttiphjat</p>
+            </div>
+            <div>
+              <p>Stato ∑ moduulio-infoa</p>
+            </div>
           </div>
-          <div class="gallery-icon">
-            <i class='bx bxl-javascript' ></i>
-            <a href="#">JS</a>
-          </div>
-          <div class="gallery-icon">
-            <i class='bx bxl-nodejs' ></i>
-            <a href="#">Nodejs</a>
-          </div>
-          <div class="gallery-icon">
-            <i class='bx bxl-react'></i>
-            <a href="#">React</a>
-          </div>
-        </div>
-        <div class="gallery-imgs">
-          <div>
-            <p>Lomalista</p>
-          </div>
-          <div>
-            <p>HelpDisk vuorat</p>
-          </div>
-          <div>
-            <p>Dokumenttiphjat</p>
-          </div>
-          <div>
-            <p>Stato ∑ moduulio-infoa</p>
-          </div>
-        </div>
-      </section>
-        <header>
+        </section>
+        <section >
+          <header>
             <div class="container header__container">
     
                 <div class="header__left">
@@ -241,14 +240,18 @@
                 </div>
         
         </header>
+        </section>
+      </section>
+    
+       
         <div>
     
        
-    <div class="header__left">
+    <div class="header__left margin-top">
     
         <h1>Viimeisimmät päivitykset</h1>
       
-        <article class="headline">
+        <article class="headline second-headline">
     
             <h5>UUSIN</h5>
             <p>Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
@@ -256,7 +259,7 @@
                 ex dicta similique quas nobis perferendis at, asperiores vitae quae ut quia? Nemo, sequi. elit temporibus,
                 qui.</p>
         </article>
-        <article class="headline">
+        <article class="headline second-headline">
     
             <h5>TOISEKSIUUSI</h5>
             <p>Lorem ipsum dolor sit amet consectetur,Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore error,
@@ -488,7 +491,7 @@ for (var i = 0; i < arrow.length; i++) {
   });
 }
 let sidebar = document.querySelector(".sidebar");
-let sidebarBtn = document.querySelector(".bx-menu");
+let sidebarBtn = document.getElementById("menu");
 console.log(sidebarBtn);
 sidebarBtn.addEventListener("click", () => {
   sidebar.classList.toggle("close");
