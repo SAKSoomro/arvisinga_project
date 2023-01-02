@@ -136,7 +136,7 @@
          
           <li class="toggle-btn">
             <div class="toggle-menu">
-                <i class="bx bx-menu"></i>
+                <i id="menu-btn" class="bx bx-menu"></i>
             </div>
           </li>
         </ul>
@@ -167,7 +167,6 @@
     <!--========================== END OF NAVBAR ============================-->
 <section class="faqs">
     <h1 class="banneri">BANNERI</h1>
-<i id="menu" class="bx bx-menu"></i>   
 </section>
    
     <div class="main-content">
@@ -491,11 +490,11 @@ for (var i = 0; i < arrow.length; i++) {
   });
 }
 let sidebar = document.querySelector(".sidebar");
-let sidebarBtn = document.getElementById("menu");
-console.log(sidebarBtn);
+let sidebarBtn = document.getElementById("menu-btn");
 sidebarBtn.addEventListener("click", () => {
   sidebar.classList.toggle("close");
 });
+
 
       </script>
 

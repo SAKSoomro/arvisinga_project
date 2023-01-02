@@ -1022,4 +1022,11 @@ footer ul li a:hover {
     font-size: 32px;
     margin-left: 350px;
   }
+  #menu-btn {
+    display: block;
+    position: absolute;
+    margin-top: -775px;
+    margin-left: 400px;
+    font-size: 32px;
+  }
 }
