@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- The left hamburger menu -->
+    <div id="left-menu">
+      <button id="left-menu-button">&#9776;</button>
+    </div>
+
+    <!-- The right hamburger menu -->
+    <div id="right-menu">
+      <button id="right-menu-button">&#9776;</button>
+    </div>
+
+    <!-- The left sidebar -->
+    <div id="left-sidebar">
+      <!-- Sidebar content goes here -->
+      <ul>
+        <li>fdfd</li>
+        <li>fsdf</li>
+        <li>fsfsd</li>
+        <li>dfsdfs</li>
+      </ul>
+    </div>
+
+    <!-- The right sidebar -->
+    <div id="right-sidebar">
+      gjdflgjdflk
+      <!-- Sidebar content goes here -->
+    </div>
+
+    <!-- The main content -->
+    <div id="main-content">
+      <!-- Main content goes here -->
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the hamburger menu buttons
+        const leftMenuButton = document.querySelector("#left-menu-button");
+        const rightMenuButton = document.querySelector("#right-menu-button");
+        let leftSidebar = document.getElementById("left-sidebar");
+        let rightSidebar = document.getElementById("right-sidebar");
+
+        // Toggle the sidebars when the hamburger menu buttons are clicked
+        leftMenuButton.addEventListener("click", function () {
+          leftSidebar.classList.toggle("left-active");
+        });
+        rightMenuButton.addEventListener("click", function () {
+          rightSidebar.classList.toggle("right-active");
+        });
+      });
+    </script>
+  </body>
+</html>

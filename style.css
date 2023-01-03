@@ -379,6 +379,7 @@ header {
 .testimonial__body::before {
   content: "";
   display: block;
+
   background: linear-gradient(
     135deg,
     transparent,
@@ -642,7 +643,6 @@ footer ul li a:hover {
 }
 .main-content,
 .faqs {
-  margin-left: 80px;
 }
 /* SIDEBAR */
 
@@ -657,13 +657,14 @@ footer ul li a:hover {
   transition: all 0.5s ease;
 }
 .sidebar.close {
-  width: 78px;
+  left: -300px;
 }
 .sidebar .logo-details {
   height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .sidebar .logo-details i {
   font-size: 30px;
@@ -975,7 +976,7 @@ footer ul li a:hover {
   position: absolute;
   font-size: 32px;
   margin-top: -15px;
-  margin-left: 100px;
+  margin-left: -150px;
 }
 #menu-btn:hover {
   cursor: pointer;
@@ -1024,11 +1025,6 @@ footer ul li a:hover {
   }
   .gallery-icons {
     margin-right: 80px;
-  }
-  #menu {
-    display: block;
-    font-size: 32px;
-    margin-left: 350px;
   }
   .toggle-menu {
     display: flex;
